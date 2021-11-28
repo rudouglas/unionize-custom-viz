@@ -24,16 +24,30 @@
             ]
         },
         {
-            "name": "fill",
-            "title": "Fill color",
-            "description": "A fill color to override the default fill color",
+            "name": "attribute",
+            "title": "Union Attribute",
+            "description": "The attribute common to both Events",
             "type": "string"
         },
         {
-            "name": "stroke",
-            "title": "Stroke color",
-            "description": "A stroke color to override the default stroke color",
-            "type": "string"
+            "name": "where",
+            "title": "Where",
+            "description": "A WHERE clause for the query",
+            "type": "collection",
+            "items": [
+                {
+                    "name": "whereClause",
+                    "title": "WHERE clause",
+                    "description": "Where clause for the Funnel step",
+                    "type": "string"
+                },
+                {
+                    "name": "as",
+                    "title": "AS ...",
+                    "description": "If you want a specific label",
+                    "type": "string"
+                }
+            ]
         }
     ]
 }
